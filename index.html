@@ -17,30 +17,30 @@
             background-repeat: no-repeat;
             background-size: cover;
             color: white;
-            font-family: baloo bhai;
+            font-family: 'baloo bhai';
         }
 
         .left {
             display: inline-block;
             position: absolute;
-            left: 34px;
+            left: 60px;
             top: 20px;
-            border: 2px solid red;
+            /* border: 2px solid red; */
         }
 
         .mid {
             display: block;
             width: 53%;
-            margin: 20px auto;
-            border: 2px solid green;
+            margin: 29px auto;
+            /* border: 2px solid green; */
         }
 
         .right {
             display: inline-block;
             position: absolute;
             right: 34px;
-            top: 20px;
-            border: 2px solid yellow;
+            top: 43px;
+            /* border: 2px solid yellow; */
         }
 
         .navbar {
@@ -65,14 +65,19 @@
         }
 
         .left img {
-            width: 136px;
-
+            width: 100px;
+            padding: 18px;
             filter: invert(100%);
         }
-        .left div{
+
+        .left div {
             text-align: center;
+            line-height: 19px;
+            font-size: 26px;
         }
-        .btn{
+
+        .btn {
+            font-family: 'baloo bhai', cursive;
             margin: 0px 9px;
             background-color: black;
             color: white;
@@ -82,8 +87,39 @@
             font-size: 20px;
             cursor: pointer;
         }
-        .btn:hover{
+
+        .btn:hover {
             background-color: rgb(31, 30, 30);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+            font-family: 'baloo bhai', cursive;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 74%;
+            margin: 20px auto;
         }
     </style>
 </head>
@@ -118,7 +154,24 @@
 
 
     </header>
-    
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php"></form>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+
 </body>
 
 
